@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Maatram Foundation — Feedback & Rating</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Maatram Foundation</h1>
+    <p>Feedback & Rating System</p>
+    <nav>
+      <a href="home.html">Dashboard</a> |
+      <a href="log-hours.html">Log Hours</a> |
+      <a href="opportunities.html">Opportunities</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Provide Feedback for a Volunteer</h2>
+
+      <!-- Prototype form: in a real app this would be restricted to admins or event leads -->
+      <form action="success.html" method="get">
+        <label for="vname">Volunteer Name</label><br>
+        <input id="vname" name="volunteer_name" type="text" required placeholder="Volunteer full name"><br><br>
+
+        <label for="event">Event / Activity</label><br>
+        <input id="event" name="event" type="text" placeholder="Community Tutoring"><br><br>
+
+        <label for="rating">Rating</label><br>
+        <select id="rating" name="rating" required>
+          <option value="">-- Select rating --</option>
+          <option value="5">5 — Excellent</option>
+          <option value="4">4 — Very good</option>
+          <option value="3">3 — Good</option>
+          <option value="2">2 — Fair</option>
+          <option value="1">1 — Needs improvement</option>
+        </select><br><br>
+
+        <label for="comments">Comments</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Share feedback about the volunteer's performance"></textarea><br><br>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </section>
+
+    <section>
+      <h3>Volunteer Rating Summary (example)</h3>
+      <p><strong> K. Reena</strong> — Average rating: 4.7 — "Very helpful and punctual."</p>
+      <p><strong>Arjun .S</strong> — Average rating: 4.2 — "Good mentor for career guidance."</p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <small>Maatram Foundation — Feedback & Rating</small>
+  </footer>
+</body>
+</html>
