@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Maatram Foundation — Volunteer Registration</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Maatram Foundation</h1>
+    <p>Volunteer Registration Portal</p>
+    <nav>
+      <a href="login.html">Login</a> |
+      <a href="home.html">Dashboard</a> |
+      <a href="opportunities.html">Opportunities</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Create Your Volunteer Profile</h2>
+      <!-- static prototype: submits to success.html -->
+      <form action="success.html" method="get">
+        <fieldset>
+          <label for="name">Full name</label><br>
+          <input id="name" name="name" type="text" required placeholder="Your full name"><br><br>
+
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required placeholder="name@example.com"><br><br>
+
+          <label for="phone">Phone</label><br>
+          <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX"><br><br>
+           
+          <label for="reg_no">Maatram Registration No</label><br>
+          <input id="reg_no" name="reg_no" type="text" required placeholder="Reg_no (MAAXXXXX)"><br><br>
+
+           <label for="college_name">College Name</label><br>
+          <input id="college_name" name="college_name" type="text" required placeholder="Your College name"><br><br>
+
+<label for="availability">Availability (days/time)</label><br>
+          <input id="availability" name="availability" type="text" placeholder="Weekends, Weekdays evenings"><br><br>
+        <button type="submit">Register</button>
+</fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

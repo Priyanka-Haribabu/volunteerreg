@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Maatram Foundation — Log Volunteer Hours</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Maatram Foundation</h1>
+    <p>Log Volunteer Hours</p>
+    <nav>
+      <a href="home.html">Dashboard</a> |
+      <a href="opportunities.html">Opportunities</a> |
+      <a href="feedback.html">Feedback</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Record Volunteer Hours</h2>
+      <!-- static form navigates to success.html to simulate submission -->
+      <form action="success.html" method="get">
+        <label for="date">Date</label><br>
+        <input id="date" name="date" type="date" required><br><br>
+
+        <label for="event">Event / Activity</label><br>
+        <input id="event" name="event" type="text" required placeholder="Community Tutoring"><br><br>
+
+        <label for="hours">Hours</label><br>
+        <input id="hours" name="hours" type="number" min="0.25" step="0.25" required placeholder="e.g. 3"><br><br>
+
+        <label for="notes">Notes (optional)</label><br>
+        <textarea id="notes" name="notes" rows="3" cols="40" placeholder="What did you do?"></textarea><br><br>
+
+        <button type="submit">Submit Hours</button>
+      </form>
+
+      <p><a href="home.html">Back to Dashboard</a></p>
+    </section>
+
+    <section>
+      <h3>Your Logged Hours (sample)</h3>
+      <ul>
+        <li>2025-11-01 — Community Tutoring — 3.0 hrs</li>
+        <li>2025-10-18 — Mentoring Session — 2.0 hrs</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <small>Maatram Foundation — Volunteer Hour Logging</small>
+  </footer>
+</body>
+</html>

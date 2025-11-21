@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Maatram Foundation — Volunteer Registration</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>Maatram Foundation</h1>
+    <p>Volunteer Registration Portal</p>
+    <nav>
+      <a href="login.html">Login</a> |
+      <a href="home.html">Dashboard</a> |
+      <a href="opportunities.html">Opportunities</a>
+    </nav>
+    <hr>
+  </header>
+
+  <main>
+    <section>
+      <h2>Create Your Volunteer Profile</h2>
+      <!-- static prototype: submits to success.html -->
+      <form action="success.html" method="get">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="name">Full name</label><br>
+          <input id="name" name="name" type="text" required placeholder="Your full name"><br><br>
+
+          <label for="email">Email</label><br>
+          <input id="email" name="email" type="email" required placeholder="name@example.com"><br><br>
+
+          <label for="phone">Phone</label><br>
+          <input id="phone" name="phone" type="tel" placeholder="+91 9XXXXXXXXX"><br><br>
+           
+          <label for="name">Maatram Registration No</label><br>
+          <input id="reg_no" name="reg_no" type="text" required placeholder="Reg_no (MAAXXXXX)"><br><br>
+
+           <label for="name">College Name</label><br>
+          <input id="college_name" name="college_name" type="text" required placeholder="Your College name"><br><br>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Volunteer Interests & Skills</legend>
+          <label>Areas of interest (check all that apply):</label><br>
+          <input type="checkbox" id="teaching" name="interest" value="teaching"><label for="teaching"> Teaching / Tutoring</label><br>
+          <input type="checkbox" id="events" name="interest" value="events"><label for="events"> Event Support</label><br>
+          <input type="checkbox" id="mentoring" name="interest" value="mentoring"><label for="mentoring"> Mentoring</label><br>
+          <input type="checkbox" id="training" name="interest" value="training"><label for="training"> Training Facilitator</label><br><br>
+
+          <label for="skills">Primary skills (comma separated)</label><br>
+          <input id="skills" name="skills" type="text" placeholder="e.g. English tutoring, Excel, communications"><br><br>
+
+          <label for="availability">Availability (days/time)</label><br>
+          <input id="availability" name="availability" type="text" placeholder="Weekends, Weekdays evenings"><br><br>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+
+      <p>Already registered? <a href="login.html">Login here</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <small>Maatram Foundation — Volunteer Registration</small>
+  </footer>
+</body>
+</html>
